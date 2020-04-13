@@ -174,6 +174,11 @@ setup_vundle() {
     debug
 }
 
+setup_pkg(){
+    # init YouCompleteMe
+    cd $HOME/.vim/bundle/YouCompleteMe
+    ./install.py --clang-completer --go-completer
+}
 ############################ MAIN()
 variable_set "$HOME"
 program_must_exist "vim"
@@ -201,6 +206,8 @@ sync_repo       "$HOME/.vim/bundle/vundle" \
                 "vundle"
 
 setup_vundle    "$APP_PATH/.vimrc.bundles.default"
+
+setup_pkg
 
 msg             "\nThanks for installing $app_name."
 msg             "© `date +%Y` http://vim.spf13.com/"
