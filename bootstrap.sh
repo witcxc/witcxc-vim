@@ -180,6 +180,7 @@ setup_pkg(){
     ./install.py --clang-completer --go-completer
 }
 ############################ MAIN()
+# brew install ack
 variable_set "$HOME"
 program_must_exist "vim"
 program_must_exist "git"
