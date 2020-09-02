@@ -55,7 +55,7 @@
     " Setup Bundle Support {
         " The next three lines ensure that the ~/.vim/bundle/ system works
         filetype off
-        set rtp+=~/.vim/bundle/vundle
+        set rtp+=~/.vim/bundle/Vundle.vim
         call vundle#rc()
     " }
 
@@ -74,7 +74,7 @@
 " Bundles {
 
     " Deps {
-        Bundle 'gmarik/vundle'
+        Bundle 'VundleVim/Vundle.vim'
         Bundle 'MarcWeber/vim-addon-mw-utils'
         Bundle 'tomtom/tlib_vim'
         if executable('ag')
@@ -176,7 +176,7 @@
                 source ~/.vim/bundle/vim-snippets/snippets/support_functions.vim
             endif
         elseif count(g:spf13_bundle_groups, 'youcompleteme')
-            Bundle 'Valloric/YouCompleteMe'
+            Bundle 'ycm-core/YouCompleteMe'
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplcache')
@@ -272,6 +272,15 @@
         if count(g:spf13_bundle_groups, 'go')
             "Bundle 'Blackrush/vim-gocode'
             Bundle 'fatih/vim-go'
+        endif
+    " }
+
+    " C Lang {
+        if count(g:spf13_bundle_groups, 'c')
+            "Bundle 'witcxc/c.vim'
+            Bundle 'witcxc/c.vim'
+            Bundle 'Shougo/neocomplete.vim'
+            Bundle 'Shougo/neosnippet.vim'
         endif
     " }
 
