@@ -21,7 +21,7 @@ app_name='witcxc-vim'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
 debug_mode='0'
 fork_maintainer='1'
-[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/gmarik/vundle.git"
+[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/VundleVim/Vundle.vim"
 
 ############################  BASIC SETUP TOOLS
 msg() {
@@ -201,10 +201,10 @@ setup_fork_mode "$fork_maintainer" \
                 "$APP_PATH" \
                 "$HOME"
 
-sync_repo       "$HOME/.vim/bundle/vundle" \
+sync_repo       "$HOME/.vim/bundle/Vundle.vim" \
                 "$VUNDLE_URI" \
                 "master" \
-                "vundle"
+                "Vundle.vim"
 
 setup_vundle    "$APP_PATH/.vimrc.bundles.default"
 
