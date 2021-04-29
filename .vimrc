@@ -102,6 +102,7 @@
     syntax on                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
+    " set encoding=utf-8
     scriptencoding utf-8
 
     if has('clipboard')
@@ -181,7 +182,10 @@
         let g:solarized_termcolors=256
         let g:solarized_termtrans=1
         let g:solarized_contrast="normal"
+        " let g:solarized_contrast="high"
         let g:solarized_visibility="normal"
+        let g:solarized_bold=1
+        " let g:solarized_visibility="high"
         color solarized             " Load a colorscheme
     endif
 
