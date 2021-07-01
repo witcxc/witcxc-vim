@@ -6,3 +6,7 @@ set nu
 vmap "+y :w !pbcopy<CR><CR> 
 nmap "+p :r !pbpaste<CR><CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+"窗口最上方bufferline显示linenumber
+let g:buftabline_numbers=1
+"airline显示文件
+let g:airline_section_c = '%{getcwd()}'
